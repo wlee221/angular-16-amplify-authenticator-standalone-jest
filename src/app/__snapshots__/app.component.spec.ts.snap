@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should render Authenticator as expected 1`] = `
+<div
+  id="root1"
+>
+  <amplify-authenticator>
+    <div
+      data-amplify-authenticator=""
+    >
+      <div
+        data-amplify-container=""
+      >
+        <amplify-slot
+          name="header"
+          style="display: contents;"
+        >
+          
+          
+        </amplify-slot>
+        <div
+          data-amplify-router=""
+        >
+          <amplify-tabs>
+            <div
+              aria-orientation="horizontal"
+              data-orientation="horizontal"
+              role="tablist"
+              style="outline: none;"
+              tabindex="0"
+            >
+              <div
+                class="amplify-flex amplify-tabs"
+                data-indicator-position="top"
+                style="gap: 0px; justify-content: center;"
+              >
+                <div
+                  aria-controls="radix-id-mockrandomvalue-1-content-0"
+                  aria-selected="true"
+                  class="amplify-tabs-item"
+                  data-orientation="horizontal"
+                  data-spacing="equal"
+                  data-state="active"
+                  id="radix-id-mockrandomvalue-1-trigger-0"
+                  role="tab"
+                  tabindex="0"
+                >
+                   Sign In 
+                </div>
+                <div
+                  aria-controls="radix-id-mockrandomvalue-1-content-1"
+                  aria-selected="false"
+                  class="amplify-tabs-item"
+                  data-orientation="horizontal"
+                  data-spacing="equal"
+                  data-state="inactive"
+                  id="radix-id-mockrandomvalue-1-trigger-1"
+                  role="tab"
+                  tabindex="1"
+                >
+                   Create Account 
+                </div>
+                
+              </div>
+            </div>
+            <amplify-tab-item
+              data-amplify-router-content=""
+              style="display: block;"
+            >
+              <div
+                aria-labelledby="radix-id-mockrandomvalue-1-trigger-0"
+                data-orientation="horizontal"
+                data-state="active"
+                id="radix-id-mockrandomvalue-1-content-0"
+                role="tabpanel"
+              >
+                <amplify-slot
+                  name="sign-in"
+                  style="display: contents;"
+                >
+                  <amplify-sign-in
+                    data-amplify-authenticator-signin=""
+                  >
+                    <amplify-slot
+                      name="sign-in-header"
+                      style="display: contents;"
+                    >
+                      
+                      
+                    </amplify-slot>
+                    <form
+                      data-amplify-form=""
+                    >
+                      <amplify-federated-sign-in>
+                        
+                      </amplify-federated-sign-in>
+                      <fieldset
+                        class="amplify-flex amplify-authenticator__column"
+                        data-amplify-fieldset=""
+                        style="flex-direction: column;"
+                      >
+                        <legend
+                          class="amplify-visually-hidden"
+                        >
+                          Sign in
+                        </legend>
+                        <amplify-base-form-fields
+                          route="signIn"
+                          style="display: contents;"
+                        >
+                          <amplify-form-field>
+                            <div
+                              class="amplify-flex amplify-field amplify-authenticator__column"
+                            >
+                              
+                              
+                              <amplify-text-field
+                                style="display: contents;"
+                              >
+                                <label
+                                  class="amplify-label"
+                                  for="amplify-field-mockrandomvalue"
+                                >
+                                   Username
+
+                                </label>
+                                <input
+                                  aria-invalid="true"
+                                  autocomplete="username"
+                                  class="amplify-input"
+                                  id="amplify-field-mockrandomvalue"
+                                  name="username"
+                                  placeholder="Enter your Username"
+                                  required=""
+                                  type="text"
+                                />
+                              </amplify-text-field>
+                              
+                              
+                            </div>
+                          </amplify-form-field>
+                          
+                          <amplify-form-field>
+                            <div
+                              class="amplify-flex amplify-field amplify-authenticator__column"
+                            >
+                              
+                              <amplify-password-field>
+                                <div
+                                  class="amplify-field amplify-flex amplify-passwordfield amplify-textfield"
+                                >
+                                  <label
+                                    class="amplify-label"
+                                    for="amplify-field-mockrandomvalue"
+                                  >
+                                     Password 
+                                  </label>
+                                  <div
+                                    class="amplify-field-group amplify-flex"
+                                  >
+                                    <div
+                                      class="amplify-field-group__field-wrapper"
+                                    >
+                                      <input
+                                        aria-invalid="true"
+                                        autocomplete="current-password"
+                                        class="amplify-field-group__control amplify-field__show-password amplify-input"
+                                        id="amplify-field-mockrandomvalue"
+                                        name="password"
+                                        placeholder="Enter your Password"
+                                        required=""
+                                        type="password"
+                                      />
+                                    </div>
+                                    <div
+                                      class="amplify-field-group__outer-end"
+                                    >
+                                      <button
+                                        amplify-button=""
+                                        aria-checked="false"
+                                        aria-label="Show password"
+                                        class="amplify-field-group__control amplify-input amplify-button amplify-button--default amplify-button--medium"
+                                        data-fullwidth="false"
+                                        data-size="medium"
+                                        data-variation="default"
+                                        role="switch"
+                                        style="font-weight: normal;"
+                                        type="button"
+                                      >
+                                        <svg
+                                          class="amplify-icon"
+                                          fill="currentColor"
+                                          viewBox="0 0 24 24"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                                          />
+                                        </svg>
+                                        
+                                        
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </amplify-password-field>
+                              
+                              
+                              
+                            </div>
+                          </amplify-form-field>
+                          
+                          
+                        </amplify-base-form-fields>
+                        <button
+                          amplify-button=""
+                          class="amplify-button amplify-button--fullwidth amplify-button--medium amplify-button--primary"
+                          data-fullwidth="true"
+                          data-size="medium"
+                          data-variation="primary"
+                          fullwidth="true"
+                          style="font-weight: normal;"
+                          type="submit"
+                          variation="primary"
+                        >
+                           Sign in 
+                        </button>
+                        
+                      </fieldset>
+                    </form>
+                    <amplify-slot
+                      name="sign-in-footer"
+                      style="display: contents;"
+                    >
+                      <div
+                        data-amplify-footer=""
+                      >
+                        <button
+                          amplify-button=""
+                          class="amplify-button amplify-button--fullwidth amplify-button--link amplify-button--small"
+                          data-fullwidth="true"
+                          data-size="small"
+                          data-variation="link"
+                          fontweight="normal"
+                          fullwidth="true"
+                          size="small"
+                          style="font-weight: normal;"
+                          type="button"
+                          variation="link"
+                        >
+                           Forgot your password? 
+                        </button>
+                      </div>
+                      
+                      
+                    </amplify-slot>
+                  </amplify-sign-in>
+                  
+                  
+                </amplify-slot>
+                
+                
+              </div>
+            </amplify-tab-item>
+            <amplify-tab-item
+              data-amplify-router-content=""
+              style="display: block;"
+            >
+              <div
+                aria-labelledby="radix-id-mockrandomvalue-1-trigger-1"
+                data-orientation="horizontal"
+                data-state="inactive"
+                id="radix-id-mockrandomvalue-1-content-1"
+                role="tabpanel"
+              >
+                
+              </div>
+            </amplify-tab-item>
+          </amplify-tabs>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        <amplify-slot
+          name="footer"
+          style="display: contents;"
+        >
+          
+          
+        </amplify-slot>
+      </div>
+    </div>
+    
+    
+  </amplify-authenticator>
+</div>
+`;

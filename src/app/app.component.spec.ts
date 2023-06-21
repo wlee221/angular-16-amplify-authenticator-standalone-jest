@@ -1,10 +1,20 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+import * as Nanoid from 'nanoid';
+
+// mock console.error to avoid "Amplify has not been configured correctly" error, which is expected in unit tests.
+jest.spyOn(console, 'error').mockImplementation();
+
+// mock nanoid so that the snapshot is stable
+jest.spyOn(Nanoid, 'nanoid').mockReturnValue('mockrandomvalue');
+
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [AppComponent]
-}));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      imports: [AppComponent],
+    })
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -12,17 +22,14 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'amplify-with-standalone'`, () => {
+  it(`should render Authenticator as expected`, fakeAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('amplify-with-standalone');
-  });
+    fixture.detectChanges();
 
-  // skipping as we've changed the templat econtent
-  // it('should render title', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement as HTMLElement;
-  //   expect(compiled.querySelector('.content span')?.textContent).toContain('amplify-with-standalone app is running!');
-  // });
+    // wait for authenticator to finish rendering
+    tick();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement).toMatchSnapshot();
+  }));
 });
